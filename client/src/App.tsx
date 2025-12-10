@@ -5,7 +5,8 @@ import { ThemeProvider } from "@/contexts/ThemeContext";
 import Home from "@/pages/Home";
 import NotFound from "@/pages/NotFound";
 import Settings from "@/pages/Settings";
-import { Route, Switch } from "wouter";
+import { Route, Switch, Router as WouterRouter, useLocation } from "wouter";
+import { useHashLocation } from "wouter/use-hash-location";
 import ErrorBoundary from "./components/ErrorBoundary";
 
 function Router() {
@@ -25,7 +26,10 @@ function App() {
         <ConfigProvider>
           <TooltipProvider>
             <Toaster />
-            <Router />
+            {/* Use Hash Routing for GitHub Pages compatibility */}
+            <WouterRouter hook={useHashLocation}>
+              <Router />
+            </WouterRouter>
           </TooltipProvider>
         </ConfigProvider>
       </ThemeProvider>
