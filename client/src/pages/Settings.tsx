@@ -34,9 +34,9 @@ export default function Settings() {
             className="grid gap-4"
           >
             <div className="flex items-center space-x-2 rounded-xl border border-white/10 p-4 hover:bg-white/5 transition-colors cursor-pointer">
-              <RadioGroupItem value="video" id="video" className="border-white/50 text-primary" />
+              <RadioGroupItem value="video" id="video" className="border-white/50 text-white" />
               <Label htmlFor="video" className="flex-1 cursor-pointer flex items-center gap-3 font-medium text-white">
-                <div className="p-2 rounded-lg bg-blue-500/20 text-blue-300">
+                <div className="p-2 rounded-lg bg-white/10 text-white">
                   <Video className="h-5 w-5" />
                 </div>
                 Vídeo Principal
@@ -44,9 +44,9 @@ export default function Settings() {
             </div>
             
             <div className="flex items-center space-x-2 rounded-xl border border-white/10 p-4 hover:bg-white/5 transition-colors cursor-pointer">
-              <RadioGroupItem value="audio" id="audio" className="border-white/50 text-primary" />
+              <RadioGroupItem value="audio" id="audio" className="border-white/50 text-white" />
               <Label htmlFor="audio" className="flex-1 cursor-pointer flex items-center gap-3 font-medium text-white">
-                <div className="p-2 rounded-lg bg-purple-500/20 text-purple-300">
+                <div className="p-2 rounded-lg bg-white/10 text-white">
                   <Music className="h-5 w-5" />
                 </div>
                 Áudio Principal
@@ -54,7 +54,7 @@ export default function Settings() {
             </div>
 
             <div className="flex items-center space-x-2 rounded-xl border border-white/10 p-4 hover:bg-white/5 transition-colors cursor-pointer">
-              <RadioGroupItem value="none" id="none" className="border-white/50 text-primary" />
+              <RadioGroupItem value="none" id="none" className="border-white/50 text-white" />
               <Label htmlFor="none" className="flex-1 cursor-pointer font-medium text-white/80">
                 Nenhum (Sempre perguntar)
               </Label>

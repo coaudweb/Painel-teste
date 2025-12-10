@@ -45,18 +45,16 @@ export default function Home() {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-6 relative overflow-hidden">
-      {/* Decorative background elements */}
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-600/30 rounded-full blur-[128px] -z-10" />
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-600/30 rounded-full blur-[128px] -z-10" />
+      {/* Clean background without decorative blobs */}
 
       <div className="z-10 w-full max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Video Card */}
         <a href={LINKS.video} className="group">
-          <Card className="glass glass-hover h-64 flex flex-col items-center justify-center gap-6 cursor-pointer border-0 bg-white/5 hover:bg-white/10 transition-all duration-500 group-hover:scale-105 group-hover:shadow-[0_0_40px_rgba(59,130,246,0.3)]">
-            <div className="p-6 rounded-full bg-blue-500/20 text-blue-300 group-hover:bg-blue-500 group-hover:text-white transition-all duration-500 shadow-[0_0_20px_rgba(59,130,246,0.2)]">
+          <Card className="glass glass-hover h-64 flex flex-col items-center justify-center gap-6 cursor-pointer border-0 bg-white/10 hover:bg-white/20 transition-all duration-500 group-hover:scale-105 group-hover:shadow-xl">
+            <div className="p-6 rounded-full bg-white/10 text-white group-hover:bg-white group-hover:text-[#5f7171] transition-all duration-500">
               <Video className="w-12 h-12" />
             </div>
-            <span className="text-2xl font-bold text-white tracking-wide group-hover:text-blue-200 transition-colors">
+            <span className="text-2xl font-bold text-white tracking-wide group-hover:text-white transition-colors">
               Vídeo
             </span>
           </Card>
@@ -64,11 +62,11 @@ export default function Home() {
 
         {/* Audio Card */}
         <a href={LINKS.audio} className="group">
-          <Card className="glass glass-hover h-64 flex flex-col items-center justify-center gap-6 cursor-pointer border-0 bg-white/5 hover:bg-white/10 transition-all duration-500 group-hover:scale-105 group-hover:shadow-[0_0_40px_rgba(168,85,247,0.3)]">
-            <div className="p-6 rounded-full bg-purple-500/20 text-purple-300 group-hover:bg-purple-500 group-hover:text-white transition-all duration-500 shadow-[0_0_20px_rgba(168,85,247,0.2)]">
+          <Card className="glass glass-hover h-64 flex flex-col items-center justify-center gap-6 cursor-pointer border-0 bg-white/10 hover:bg-white/20 transition-all duration-500 group-hover:scale-105 group-hover:shadow-xl">
+            <div className="p-6 rounded-full bg-white/10 text-white group-hover:bg-white group-hover:text-[#5f7171] transition-all duration-500">
               <Music className="w-12 h-12" />
             </div>
-            <span className="text-2xl font-bold text-white tracking-wide group-hover:text-purple-200 transition-colors">
+            <span className="text-2xl font-bold text-white tracking-wide group-hover:text-white transition-colors">
               Áudio
             </span>
           </Card>

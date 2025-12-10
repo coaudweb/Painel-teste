@@ -43,14 +43,14 @@
 }
 
 :root {
-  /* Glassmorphism Theme - Dark Mode Base */
-  --primary: oklch(0.7 0.15 280); /* Bright Purple/Pink */
-  --primary-foreground: oklch(1 0 0);
+  /* Glassmorphism Theme - Clean Slate Base */
+  --primary: oklch(0.9 0.05 180); /* Soft Cyan/Mint to match slate */
+  --primary-foreground: #5f7171;
   
   --radius: 1rem;
   
   /* Transparent/Glassy Colors */
-  --background: oklch(0.1 0.05 280); /* Deep dark purple fallback */
+  --background: #5f7171;
   --foreground: oklch(0.98 0 0);
   
   --card: oklch(0.2 0.05 280 / 0.4); /* Glassy card */
@@ -101,11 +101,7 @@
   }
   body {
     @apply bg-background text-foreground antialiased;
-    background-image: url('/images/glassmorphism-bg-1.png');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+    background-color: #5f7171;
   }
   
   /* Glass utility class */
